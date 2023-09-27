@@ -10,6 +10,7 @@ public class TotalTimeFilterTest {
     @Test
     void testTotalTimeFilter() {
         List<Flight> flights = FlightBuilder.createFlights();
+
         FlightFilter filter = new TotalTimeFilter();
         List<Flight> filteredFlights = filter.filter(flights);
         assertEquals(3, filteredFlights.size());
